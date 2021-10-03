@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://fuadnafiz98-nextjs-starter.vercel.app/
+
+# Sitemaps
+Sitemap: https://fuadnafiz98-nextjs-starter.vercel.app/sitemap.xml

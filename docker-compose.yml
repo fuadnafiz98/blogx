@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  nextjs:
+    # build for dev
+    # build: ./
+    image: fuadnafiz98/nextjs-stater_nextjs:latest
+  nginx:
+    # build: ./nginx
+    image: fuadnafiz98/nextjs-stater_nginx:latest
+    ports: 
+      - 80:80
