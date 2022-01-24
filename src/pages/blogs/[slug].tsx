@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import { GetStaticProps } from "next";
-import Link from "next/link";
 import { getMDXComponent } from "mdx-bundler/client";
 import { getAllPosts, getSinglePost } from "../../utils/mdx";
 
@@ -28,7 +27,7 @@ export const getStaticPaths = async () => {
 const Post = ({ code, frontmatter }: Props) => {
   const Component = useMemo(() => getMDXComponent(code), [code]);
   return (
-    <div>
+    <div className="">
       <h2>{frontmatter.title}</h2>
       <Component />
     </div>
